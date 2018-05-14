@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import Footer from './Footer'
 import Map from './Map'
 import Contact from './Contact'
+import GetInTouchForm from './GetInTouchForm'
 
 const MainWrapper = styled.div`
   margin: 2em;
@@ -13,8 +14,14 @@ const MainWrapper = styled.div`
 const ContactAndFormWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   background-color: #34215C;
   padding: 2em 0
+`
+
+const HorizontalLine = styled.div`
+  width: 3px;
+  background-color: #008DE0;
 `
 
 class GetInTouch extends React.Component {
@@ -25,6 +32,8 @@ class GetInTouch extends React.Component {
           <Map />
           <ContactAndFormWrapper>
             <Contact />
+            <HorizontalLine />
+            <GetInTouchForm />
           </ContactAndFormWrapper>
         </MainWrapper>
         <Footer forwardLink='/' backwardLink='/working_with_us' />
