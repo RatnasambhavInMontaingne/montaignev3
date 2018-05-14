@@ -10,7 +10,7 @@ const FormWrapper = styled.div`
 `
 
 const FormSection = styled.div`
-  width: 100%;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -25,10 +25,10 @@ const Header = styled.p`
 const StyledInput = styled.input`
   width: 45%;
   min-width: 300px;
-  margin: 1em 0;
+  margin: 1.5em 0;
   background: none;
   border: none;
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
   transition: border-bottom 0.25s linear;
   font-size: 1.2em;
   color: #fff;
@@ -38,33 +38,37 @@ const StyledInput = styled.input`
 `
 
 const StyledSelect = styled.select`
-  width: 70%;
+  width: 95%;
   background: none;
   border: none;
-  border-bottom: 2px solid #fff;
+  border-bottom: 1px solid #fff;
   font-size: 1.2em;
+  margin: 1.5em 0;
   color: #fff;
 `
 
 const StyledOption = styled.option`
   background: #34215C;
-  margin: 1em 0;
+  margin: 2em 0;
   border: none;
   color: #fff;
 `
 
 const StyledTextArea = styled.textarea`
+  width: calc(93% - 1em);
   background: none;
-  margin: 1em 0;
-  border: 2px solid #fff;
+  margin: 1.5em 0;
+  padding: 1em;
+  border: 1px solid #fff;
   color: #000;
   font-size: 1.2em;
-  width: 70%;
 `
 
 const StyledSubmit = styled.input`
+  width: 70%;
   background-color: #008DE0;
   border: none;
+  margin: 1.5em 0;
   border-radius: 4px;
   font-size: 1.2em;
   padding: 0.5em;
@@ -99,7 +103,7 @@ class GetInTouchForm extends React.Component {
           </StyledSelect>
         </FormSection>
         <FormSection>
-          <StyledTextArea rows='6' cols='5' placeholder='Enter your Message' />
+          <StyledTextArea rows='4' cols='5' placeholder='Enter your Message' />
         </FormSection>
         <FormSection>
           <StyledSubmit type='submit' value='Submit' onSubmit={this.onSubmit}/>

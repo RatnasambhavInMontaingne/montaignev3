@@ -4,6 +4,7 @@ import Footer from './Footer'
 import Map from './Map'
 import Contact from './Contact'
 import GetInTouchForm from './GetInTouchForm'
+import BlogComponent from './BlogComponent'
 
 const MainWrapper = styled.div`
   margin: 2em;
@@ -35,6 +36,7 @@ class GetInTouch extends React.Component {
             <HorizontalLine />
             <GetInTouchForm />
           </ContactAndFormWrapper>
+          <BlogComponent />
         </MainWrapper>
         <Footer forwardLink='/' backwardLink='/working_with_us' />
       </React.Fragment>
