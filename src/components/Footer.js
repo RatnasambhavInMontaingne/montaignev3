@@ -45,7 +45,7 @@ class Footer extends React.Component {
           <p>&nbsp;|&nbsp;</p>
           <SocialLinks href='#'>Pi</SocialLinks>
           <p>&nbsp;|&nbsp;</p>
-          <SocialLinks href='#'>In</SocialLinks>
+          <SocialLinks href='#'>Tw</SocialLinks>
         </SocialLinkWrapper>
         <Link to={this.props.forwardLink}>
           <ForwardArrow src={arrowRight} alt='Next' />
