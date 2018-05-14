@@ -15,7 +15,7 @@ const MainContent = styled.div`
   justify-content: space-evenly;
   background-color: #DC5555;
   width: 80%;
-  padding: 2em;
+  padding: 3em;
 `
 
 const MainContentLeft = styled.div`
