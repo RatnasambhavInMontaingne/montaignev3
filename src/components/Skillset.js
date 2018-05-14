@@ -1,9 +1,13 @@
 import React from 'react'
+import Footer from './Footer'
 
 class Skillset extends React.Component {
   render () {
     return (
-      <h1>Skillset</h1>
+      <React.Fragment>
+        <h1>Skillset</h1>
+        <Footer forwardLink='/achievements' backwardLink='/' />
+      </React.Fragment>
     )
   }
 }

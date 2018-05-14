@@ -1,9 +1,13 @@
 import React from 'react'
+import Footer from './Footer'
 
 class WorkingWithUs extends React.Component {
   render () {
     return (
-      <h1>Working With Us</h1>
+      <React.Fragment>
+        <h1>Our Story</h1>
+        <Footer forwardLink='/get_in_touch' backwardLink='/our_story' />
+      </React.Fragment>
     )
   }
 }
