@@ -6,7 +6,7 @@ import Contact from './Contact'
 import GetInTouchForm from './GetInTouchForm'
 import BlogComponent from './BlogComponent'
 
-const MainWrapper = styled.div`
+const GetInTouchWrapper = styled.div`
   margin: 2em;
   border-radius: 3px;
   box-shadow: 0 20px 100px rgba(0,0,0,.2);
@@ -29,7 +29,7 @@ class GetInTouch extends React.Component {
   render () {
     return (
       <React.Fragment>
-        <MainWrapper>
+        <GetInTouchWrapper>
           <Map />
           <ContactAndFormWrapper>
             <Contact />
@@ -37,7 +37,7 @@ class GetInTouch extends React.Component {
             <GetInTouchForm />
           </ContactAndFormWrapper>
           <BlogComponent />
-        </MainWrapper>
+        </GetInTouchWrapper>
         <Footer forwardLink='/' backwardLink='/working_with_us' />
       </React.Fragment>
     )
